@@ -4,23 +4,23 @@ import os
 import random
 import numpy as np
 
-def _print(string):
-    sys.stdout.write(string)
-    sys.stdout.flush()
-
-def s_print(string, sleep_time_min = 0.1, sleep_time_max = 0.1):
-    for i in string:
-        st = random.uniform( abs ( sleep_time_min ), abs ( sleep_time_max ) )
-        _print(i)
-        time.sleep(st)
-
-char_list = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ !.,;:"
-char_list = list( char_list )
-
-text = np.random.choice(char_list, size = 50)
-
-s_print(text, 0.0, 0.0)
-print('\n')
+#def _print(string):
+#    sys.stdout.write(string)
+#    sys.stdout.flush()
+#
+#def s_print(string, sleep_time_min = 0.1, sleep_time_max = 0.1):
+#    for i in string:
+#        st = random.uniform( abs ( sleep_time_min ), abs ( sleep_time_max ) )
+#        _print(i)
+#        time.sleep(st)
+#
+#char_list = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ !.,;:"
+#char_list = list( char_list )
+#
+#text = np.random.choice(char_list, size = 50)
+#
+#s_print(text, 0.0, 0.0)
+#print('\n')
 
 os.system('cls')
 
